@@ -11,15 +11,12 @@
 }
 
 body{
-    width: 100%;
     overflow-x: hidden;
     font-family: var(--default-font-family);
     background: var(--body-bg);
     padding: 0;
     margin: 0;
 }
-
-/* header section */
 nav{
     margin: 0;
     padding: 0;
@@ -45,6 +42,31 @@ a{
     text-decoration: none;
     transition: all 200ms ease-in-out;
 }
+h1{
+    font-size: 36px;
+    line-height: 40px;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+    background: linear-gradient( 90deg, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100% );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+p{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    font-family: var(--default-font-family);
+    color: #fff;
+    margin-bottom: 26px;
+}
+form{
+    margin-bottom: 20px;
+}
+footer{
+    background: var(--footer-header-bg);
+}
+
+/* header section */
 a:hover{
     color: var(--button-bg);
 }
@@ -58,31 +80,6 @@ ul .nav-check-in-out{
     font-size: 13px;
     line-height: 20px;
     font-weight: 300;
-}
-h1{
-    font-size: 36px;
-    line-height: 40px;
-    font-family: var(--heading-font-family);
-    font-weight: bold;
-    background: linear-gradient( 90deg, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100% );
-    -webkit-background-clip: text;
-    color: transparent;
-    width: 400px;
-}
-p{
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 300;
-    font-family: var(--default-font-family);
-    color: #fff;
-    width: 340px;
-    margin-bottom: 26px;
-}
-form{
-    margin-bottom: 20px;
-}
-footer{
-    background: var(--footer-header-bg);
 }
 .nav-frame{
     display: flex;
@@ -287,10 +284,6 @@ footer{
 
 
 @media (min-width: 768px) {
-    body{
-        width: 100%;
-    }
-
     /* header-view */
     li{
         margin-right: 10px;
@@ -328,11 +321,11 @@ footer{
 
     /* frame-content */
     .gpt-3-frame{
+        display: flex;
         flex-direction: row;
-        margin: 0 auto;
-    }
+        margin: 0 20px;
+    } */
     .gpt-3-frame .openai-pics img{
-        max-width: 100%;
         height: 400px;
     }
 
