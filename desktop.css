@@ -1,0 +1,80 @@
+:root{
+    --body-bg: #e5e5e5;
+    --nav-bar-color: #054D9F;
+    --frame-bg: #040C18;
+    --button-bg: #FF4820;
+    --heading-font-family: 'Lato', sans-serif;
+    --content-font-family: 'Montserrat', sans-serif;
+    --default-font-family: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: var(--default-font-family);
+    background: var(--body-bg);
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: var(--nav-bar-color);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: inline-block;
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    color: var(--frame-bg);
+}
+
+a :hover{
+    color: var(--nav-bar-color);
+    opacity: 0.7;
+}
+
+nav .nav-gpt-3{
+    display: inline;
+}
+ul .logo{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 900;
+    font-family: var(--content-font-family);
+    margin-right: 50px;
+    margin-left: 30px;
+}
+ul .nav-gpt-pages{
+    margin-right: 130px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+}
+ul .nav-check-in-out{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+
+.signup button{
+    padding: 10px 20px;
+    background: var(--button-bg);
+    border: none;
+    border-radius: 3px;
+}
+.signup button :hover{
+    color: #fff;
+}
+.gpt-3-frame{
+    background: var(--frame-bg);
+    margin: 50px 30px;
+}
+
